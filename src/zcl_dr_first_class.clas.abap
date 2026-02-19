@@ -1,0 +1,23 @@
+CLASS zcl_dr_first_class DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    INTERFACES if_oo_adt_classrun .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_DR_FIRST_CLASS IMPLEMENTATION.
+
+
+  METHOD if_oo_adt_classrun~main.
+
+  out->write( 'THIS SAP BAP DR First Class' ).
+
+  ENDMETHOD.
+ENDCLASS.
