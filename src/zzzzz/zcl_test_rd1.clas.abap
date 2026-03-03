@@ -4,6 +4,9 @@ CLASS zcl_test_rd1 DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
+    DATA: lv_deepak  TYPE string.  "test
+    DATA: lv_deepak2  TYPE string. " TEst
+
   PROTECTED SECTION.
   PRIVATE SECTION.
 ENDCLASS.
@@ -11,4 +14,6 @@ ENDCLASS.
 
 
 CLASS zcl_test_rd1 IMPLEMENTATION.
+
+
 ENDCLASS.
