@@ -1,0 +1,29 @@
+managed implementation in class zbp_i_student_det unique;
+strict;
+
+define behavior for ZI_student_DET alias Student
+persistent table zrd_student_det
+lock master
+authorization master ( instance )
+//etag master <field_name>      // Works along with lock master
+{
+  create ( authorization : global );
+  update;
+  delete;
+
+  field ( numbering : managed, readonly ) Id;
+  action ( features : instance ) SetAdmitted result [1] $self;
+
+  mapping for zrd_student_det
+    {
+      Id              = id;
+      Firstname       = firstname;
+      Lastname        = lastname;
+      Age             = age;
+      Course          = course;
+      Courseduratuion = courseduratuion;
+      Status          = status;
+      Gender          = gender;
+      Dob             = dob;
+    }
+}
