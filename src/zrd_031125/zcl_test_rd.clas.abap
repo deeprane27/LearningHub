@@ -5,6 +5,8 @@ CLASS zcl_test_rd DEFINITION
 
   PUBLIC SECTION.
 
+    DATA lv_rushali TYPE c LENGTH 30.
+
     INTERFACES if_a4c_cp_service .
   PROTECTED SECTION.
   PRIVATE SECTION.
