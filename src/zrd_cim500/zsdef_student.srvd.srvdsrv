@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Deficantion for student'
+define service ZSDEF_Student {
+  expose ZC_student_DET;
+}
